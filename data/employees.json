@@ -1,0 +1,809 @@
+{
+    "company": {
+        "name": "TechNova Solutions Ltd.",
+        "industry": "Software Development",
+        "location": "Dhaka, Bangladesh"
+    },
+    "employees": [
+        {
+            "employee_id": "EMP-1001",
+            "first_name": "Arif",
+            "last_name": "Hossain",
+            "full_name": "Arif Hossain",
+            "gender": "Male",
+            "date_of_birth": "1995-03-15",
+            "email": "arif.hossain@technova.example",
+            "phone": "+8801700001001",
+            "job_title": "Senior Software Engineer",
+            "department": "Engineering",
+            "employment_type": "Full-Time",
+            "joining_date": "2021-06-10",
+            "employment_status": "Active",
+            "manager_id": "EMP-1005",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 120000,
+                "annual": 1440000
+            },
+            "skills": [
+                "JavaScript",
+                "Node.js",
+                "React",
+                "PostgreSQL",
+                "AWS"
+            ],
+            "address": {
+                "street": "12 Lake View Road",
+                "city": "Dhaka",
+                "postal_code": "1212",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Nusrat Hossain",
+                "relationship": "Spouse",
+                "phone": "+8801800002001"
+            }
+        },
+        {
+            "employee_id": "EMP-1002",
+            "first_name": "Nadia",
+            "last_name": "Rahman",
+            "full_name": "Nadia Rahman",
+            "gender": "Female",
+            "date_of_birth": "1997-07-22",
+            "email": "nadia.rahman@technova.example",
+            "phone": "+8801700001002",
+            "job_title": "Software Engineer",
+            "department": "Engineering",
+            "employment_type": "Full-Time",
+            "joining_date": "2022-02-14",
+            "employment_status": "Active",
+            "manager_id": "EMP-1001",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 85000,
+                "annual": 1020000
+            },
+            "skills": [
+                "PHP",
+                "Laravel",
+                "MySQL",
+                "REST API",
+                "Docker"
+            ],
+            "address": {
+                "street": "45 Green Road",
+                "city": "Dhaka",
+                "postal_code": "1205",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Sadia Rahman",
+                "relationship": "Sister",
+                "phone": "+8801800002002"
+            }
+        },
+        {
+            "employee_id": "EMP-1003",
+            "first_name": "Tanvir",
+            "last_name": "Ahmed",
+            "full_name": "Tanvir Ahmed",
+            "gender": "Male",
+            "date_of_birth": "1994-11-08",
+            "email": "tanvir.ahmed@technova.example",
+            "phone": "+8801700001003",
+            "job_title": "Tech Lead",
+            "department": "Engineering",
+            "employment_type": "Full-Time",
+            "joining_date": "2020-01-20",
+            "employment_status": "Active",
+            "manager_id": "EMP-1005",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 155000,
+                "annual": 1860000
+            },
+            "skills": [
+                "TypeScript",
+                "React",
+                "Node.js",
+                "MongoDB",
+                "System Design"
+            ],
+            "address": {
+                "street": "78 Banani Road",
+                "city": "Dhaka",
+                "postal_code": "1213",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Mariam Ahmed",
+                "relationship": "Mother",
+                "phone": "+8801800002003"
+            }
+        },
+        {
+            "employee_id": "EMP-1004",
+            "first_name": "Sadia",
+            "last_name": "Islam",
+            "full_name": "Sadia Islam",
+            "gender": "Female",
+            "date_of_birth": "1998-01-30",
+            "email": "sadia.islam@technova.example",
+            "phone": "+8801700001004",
+            "job_title": "Frontend Developer",
+            "department": "Engineering",
+            "employment_type": "Full-Time",
+            "joining_date": "2023-04-03",
+            "employment_status": "Active",
+            "manager_id": "EMP-1003",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 70000,
+                "annual": 840000
+            },
+            "skills": [
+                "React",
+                "Next.js",
+                "JavaScript",
+                "Tailwind CSS",
+                "Figma"
+            ],
+            "address": {
+                "street": "23 Uttara Sector 7",
+                "city": "Dhaka",
+                "postal_code": "1230",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Rafiq Islam",
+                "relationship": "Father",
+                "phone": "+8801800002004"
+            }
+        },
+        {
+            "employee_id": "EMP-1005",
+            "first_name": "Imran",
+            "last_name": "Karim",
+            "full_name": "Imran Karim",
+            "gender": "Male",
+            "date_of_birth": "1989-09-12",
+            "email": "imran.karim@technova.example",
+            "phone": "+8801700001005",
+            "job_title": "Engineering Manager",
+            "department": "Engineering",
+            "employment_type": "Full-Time",
+            "joining_date": "2018-08-15",
+            "employment_status": "Active",
+            "manager_id": null,
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 210000,
+                "annual": 2520000
+            },
+            "skills": [
+                "Leadership",
+                "System Design",
+                "Java",
+                "AWS",
+                "Agile"
+            ],
+            "address": {
+                "street": "15 Gulshan Avenue",
+                "city": "Dhaka",
+                "postal_code": "1212",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Farhana Karim",
+                "relationship": "Spouse",
+                "phone": "+8801800002005"
+            }
+        },
+        {
+            "employee_id": "EMP-1006",
+            "first_name": "Rafi",
+            "last_name": "Chowdhury",
+            "full_name": "Rafi Chowdhury",
+            "gender": "Male",
+            "date_of_birth": "1996-05-18",
+            "email": "rafi.chowdhury@technova.example",
+            "phone": "+8801700001006",
+            "job_title": "Backend Developer",
+            "department": "Engineering",
+            "employment_type": "Full-Time",
+            "joining_date": "2022-09-01",
+            "employment_status": "Active",
+            "manager_id": "EMP-1003",
+            "work_location": "Remote",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 90000,
+                "annual": 1080000
+            },
+            "skills": [
+                "Python",
+                "Django",
+                "PostgreSQL",
+                "Redis",
+                "Docker"
+            ],
+            "address": {
+                "street": "19 Zindabazar",
+                "city": "Sylhet",
+                "postal_code": "3100",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Shamima Chowdhury",
+                "relationship": "Mother",
+                "phone": "+8801800002006"
+            }
+        },
+        {
+            "employee_id": "EMP-1007",
+            "first_name": "Mehedi",
+            "last_name": "Hasan",
+            "full_name": "Mehedi Hasan",
+            "gender": "Male",
+            "date_of_birth": "1999-02-11",
+            "email": "mehedi.hasan@technova.example",
+            "phone": "+8801700001007",
+            "job_title": "Junior Software Engineer",
+            "department": "Engineering",
+            "employment_type": "Full-Time",
+            "joining_date": "2024-01-08",
+            "employment_status": "Active",
+            "manager_id": "EMP-1006",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 55000,
+                "annual": 660000
+            },
+            "skills": [
+                "JavaScript",
+                "React",
+                "Node.js",
+                "Git",
+                "MongoDB"
+            ],
+            "address": {
+                "street": "34 Mirpur Road",
+                "city": "Dhaka",
+                "postal_code": "1216",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Nasrin Hasan",
+                "relationship": "Mother",
+                "phone": "+8801800002007"
+            }
+        },
+        {
+            "employee_id": "EMP-1008",
+            "first_name": "Farzana",
+            "last_name": "Akter",
+            "full_name": "Farzana Akter",
+            "gender": "Female",
+            "date_of_birth": "1995-12-03",
+            "email": "farzana.akter@technova.example",
+            "phone": "+8801700001008",
+            "job_title": "QA Engineer",
+            "department": "Quality Assurance",
+            "employment_type": "Full-Time",
+            "joining_date": "2021-11-15",
+            "employment_status": "Active",
+            "manager_id": "EMP-1010",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 80000,
+                "annual": 960000
+            },
+            "skills": [
+                "Manual Testing",
+                "Automation",
+                "Playwright",
+                "API Testing",
+                "Postman"
+            ],
+            "address": {
+                "street": "56 Dhanmondi Road",
+                "city": "Dhaka",
+                "postal_code": "1209",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Sultan Akter",
+                "relationship": "Father",
+                "phone": "+8801800002008"
+            }
+        },
+        {
+            "employee_id": "EMP-1009",
+            "first_name": "Nabila",
+            "last_name": "Sultana",
+            "full_name": "Nabila Sultana",
+            "gender": "Female",
+            "date_of_birth": "1997-08-27",
+            "email": "nabila.sultana@technova.example",
+            "phone": "+8801700001009",
+            "job_title": "UI/UX Designer",
+            "department": "Design",
+            "employment_type": "Full-Time",
+            "joining_date": "2022-05-16",
+            "employment_status": "Active",
+            "manager_id": "EMP-1015",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 75000,
+                "annual": 900000
+            },
+            "skills": [
+                "Figma",
+                "UI Design",
+                "UX Research",
+                "Prototyping",
+                "Design Systems"
+            ],
+            "address": {
+                "street": "21 Mohammadpur",
+                "city": "Dhaka",
+                "postal_code": "1207",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Mizan Sultana",
+                "relationship": "Brother",
+                "phone": "+8801800002009"
+            }
+        },
+        {
+            "employee_id": "EMP-1010",
+            "first_name": "Shakil",
+            "last_name": "Ahmed",
+            "full_name": "Shakil Ahmed",
+            "gender": "Male",
+            "date_of_birth": "1991-04-19",
+            "email": "shakil.ahmed@technova.example",
+            "phone": "+8801700001010",
+            "job_title": "QA Lead",
+            "department": "Quality Assurance",
+            "employment_type": "Full-Time",
+            "joining_date": "2019-03-11",
+            "employment_status": "Active",
+            "manager_id": "EMP-1005",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 135000,
+                "annual": 1620000
+            },
+            "skills": [
+                "QA Leadership",
+                "Selenium",
+                "Playwright",
+                "API Testing",
+                "CI/CD"
+            ],
+            "address": {
+                "street": "9 Badda Link Road",
+                "city": "Dhaka",
+                "postal_code": "1212",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Rumana Ahmed",
+                "relationship": "Spouse",
+                "phone": "+8801800002010"
+            }
+        },
+        {
+            "employee_id": "EMP-1011",
+            "first_name": "Ayesha",
+            "last_name": "Rahman",
+            "full_name": "Ayesha Rahman",
+            "gender": "Female",
+            "date_of_birth": "1993-06-25",
+            "email": "ayesha.rahman@technova.example",
+            "phone": "+8801700001011",
+            "job_title": "Product Manager",
+            "department": "Product",
+            "employment_type": "Full-Time",
+            "joining_date": "2020-07-06",
+            "employment_status": "Active",
+            "manager_id": "EMP-1018",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 145000,
+                "annual": 1740000
+            },
+            "skills": [
+                "Product Management",
+                "Agile",
+                "Jira",
+                "Roadmapping",
+                "Analytics"
+            ],
+            "address": {
+                "street": "17 Baridhara DOHS",
+                "city": "Dhaka",
+                "postal_code": "1206",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Rashid Rahman",
+                "relationship": "Father",
+                "phone": "+8801800002011"
+            }
+        },
+        {
+            "employee_id": "EMP-1012",
+            "first_name": "Siam",
+            "last_name": "Kabir",
+            "full_name": "Siam Kabir",
+            "gender": "Male",
+            "date_of_birth": "1998-10-14",
+            "email": "siam.kabir@technova.example",
+            "phone": "+8801700001012",
+            "job_title": "DevOps Engineer",
+            "department": "Infrastructure",
+            "employment_type": "Full-Time",
+            "joining_date": "2023-01-09",
+            "employment_status": "Active",
+            "manager_id": "EMP-1019",
+            "work_location": "Remote",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 95000,
+                "annual": 1140000
+            },
+            "skills": [
+                "AWS",
+                "Docker",
+                "Kubernetes",
+                "Terraform",
+                "Linux"
+            ],
+            "address": {
+                "street": "42 Ambarkhana",
+                "city": "Sylhet",
+                "postal_code": "3100",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Laila Kabir",
+                "relationship": "Mother",
+                "phone": "+8801800002012"
+            }
+        },
+        {
+            "employee_id": "EMP-1013",
+            "first_name": "Tania",
+            "last_name": "Jahan",
+            "full_name": "Tania Jahan",
+            "gender": "Female",
+            "date_of_birth": "1996-09-05",
+            "email": "tania.jahan@technova.example",
+            "phone": "+8801700001013",
+            "job_title": "Business Analyst",
+            "department": "Business Analysis",
+            "employment_type": "Full-Time",
+            "joining_date": "2022-11-21",
+            "employment_status": "Active",
+            "manager_id": "EMP-1018",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 85000,
+                "annual": 1020000
+            },
+            "skills": [
+                "Business Analysis",
+                "Requirements Gathering",
+                "SQL",
+                "Jira",
+                "Documentation"
+            ],
+            "address": {
+                "street": "11 Uttara Sector 10",
+                "city": "Dhaka",
+                "postal_code": "1230",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Kamrul Jahan",
+                "relationship": "Brother",
+                "phone": "+8801800002013"
+            }
+        },
+        {
+            "employee_id": "EMP-1014",
+            "first_name": "Rakib",
+            "last_name": "Mahmud",
+            "full_name": "Rakib Mahmud",
+            "gender": "Male",
+            "date_of_birth": "1999-12-20",
+            "email": "rakib.mahmud@technova.example",
+            "phone": "+8801700001014",
+            "job_title": "Mobile App Developer",
+            "department": "Engineering",
+            "employment_type": "Full-Time",
+            "joining_date": "2024-02-19",
+            "employment_status": "Active",
+            "manager_id": "EMP-1003",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 65000,
+                "annual": 780000
+            },
+            "skills": [
+                "Flutter",
+                "Dart",
+                "Firebase",
+                "Android",
+                "iOS"
+            ],
+            "address": {
+                "street": "29 Khilgaon",
+                "city": "Dhaka",
+                "postal_code": "1219",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Momena Mahmud",
+                "relationship": "Mother",
+                "phone": "+8801800002014"
+            }
+        },
+        {
+            "employee_id": "EMP-1015",
+            "first_name": "Sabrina",
+            "last_name": "Khan",
+            "full_name": "Sabrina Khan",
+            "gender": "Female",
+            "date_of_birth": "1990-02-28",
+            "email": "sabrina.khan@technova.example",
+            "phone": "+8801700001015",
+            "job_title": "Design Manager",
+            "department": "Design",
+            "employment_type": "Full-Time",
+            "joining_date": "2019-09-02",
+            "employment_status": "Active",
+            "manager_id": "EMP-1018",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 140000,
+                "annual": 1680000
+            },
+            "skills": [
+                "Design Leadership",
+                "Figma",
+                "UX Strategy",
+                "Branding",
+                "Research"
+            ],
+            "address": {
+                "street": "8 Gulshan 2",
+                "city": "Dhaka",
+                "postal_code": "1212",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Adnan Khan",
+                "relationship": "Spouse",
+                "phone": "+8801800002015"
+            }
+        },
+        {
+            "employee_id": "EMP-1016",
+            "first_name": "Hasan",
+            "last_name": "Miah",
+            "full_name": "Hasan Miah",
+            "gender": "Male",
+            "date_of_birth": "1997-03-09",
+            "email": "hasan.miah@technova.example",
+            "phone": "+8801700001016",
+            "job_title": "Data Engineer",
+            "department": "Data",
+            "employment_type": "Full-Time",
+            "joining_date": "2022-06-20",
+            "employment_status": "Active",
+            "manager_id": "EMP-1019",
+            "work_location": "Remote",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 105000,
+                "annual": 1260000
+            },
+            "skills": [
+                "Python",
+                "SQL",
+                "Spark",
+                "ETL",
+                "PostgreSQL"
+            ],
+            "address": {
+                "street": "16 Shibganj",
+                "city": "Sylhet",
+                "postal_code": "3100",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Rokeya Miah",
+                "relationship": "Mother",
+                "phone": "+8801800002016"
+            }
+        },
+        {
+            "employee_id": "EMP-1017",
+            "first_name": "Jannatul",
+            "last_name": "Ferdous",
+            "full_name": "Jannatul Ferdous",
+            "gender": "Female",
+            "date_of_birth": "1998-11-17",
+            "email": "jannatul.ferdous@technova.example",
+            "phone": "+8801700001017",
+            "job_title": "HR Executive",
+            "department": "Human Resources",
+            "employment_type": "Full-Time",
+            "joining_date": "2023-08-07",
+            "employment_status": "Active",
+            "manager_id": "EMP-1020",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 60000,
+                "annual": 720000
+            },
+            "skills": [
+                "Recruitment",
+                "Employee Relations",
+                "HRIS",
+                "Onboarding",
+                "Payroll"
+            ],
+            "address": {
+                "street": "33 Mirpur DOHS",
+                "city": "Dhaka",
+                "postal_code": "1216",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Abdul Ferdous",
+                "relationship": "Father",
+                "phone": "+8801800002017"
+            }
+        },
+        {
+            "employee_id": "EMP-1018",
+            "first_name": "Fahim",
+            "last_name": "Anwar",
+            "full_name": "Fahim Anwar",
+            "gender": "Male",
+            "date_of_birth": "1987-07-04",
+            "email": "fahim.anwar@technova.example",
+            "phone": "+8801700001018",
+            "job_title": "Head of Product",
+            "department": "Product",
+            "employment_type": "Full-Time",
+            "joining_date": "2017-04-17",
+            "employment_status": "Active",
+            "manager_id": null,
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 250000,
+                "annual": 3000000
+            },
+            "skills": [
+                "Product Strategy",
+                "Leadership",
+                "Product Analytics",
+                "Agile",
+                "SaaS"
+            ],
+            "address": {
+                "street": "25 Gulshan Avenue",
+                "city": "Dhaka",
+                "postal_code": "1212",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Maliha Anwar",
+                "relationship": "Spouse",
+                "phone": "+8801800002018"
+            }
+        },
+        {
+            "employee_id": "EMP-1019",
+            "first_name": "Nayeem",
+            "last_name": "Sarker",
+            "full_name": "Nayeem Sarker",
+            "gender": "Male",
+            "date_of_birth": "1992-10-26",
+            "email": "nayeem.sarker@technova.example",
+            "phone": "+8801700001019",
+            "job_title": "Infrastructure Manager",
+            "department": "Infrastructure",
+            "employment_type": "Full-Time",
+            "joining_date": "2019-11-04",
+            "employment_status": "Active",
+            "manager_id": "EMP-1005",
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 165000,
+                "annual": 1980000
+            },
+            "skills": [
+                "Cloud Architecture",
+                "AWS",
+                "Kubernetes",
+                "DevOps",
+                "Security"
+            ],
+            "address": {
+                "street": "7 Bashundhara R/A",
+                "city": "Dhaka",
+                "postal_code": "1229",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Shirin Sarker",
+                "relationship": "Spouse",
+                "phone": "+8801800002019"
+            }
+        },
+        {
+            "employee_id": "EMP-1020",
+            "first_name": "Mushfiq",
+            "last_name": "Ahmed",
+            "full_name": "Mushfiq Ahmed",
+            "gender": "Male",
+            "date_of_birth": "1988-05-31",
+            "email": "mushfiq.ahmed@technova.example",
+            "phone": "+8801700001020",
+            "job_title": "HR Manager",
+            "department": "Human Resources",
+            "employment_type": "Full-Time",
+            "joining_date": "2018-02-12",
+            "employment_status": "Active",
+            "manager_id": null,
+            "work_location": "Dhaka",
+            "salary": {
+                "currency": "BDT",
+                "monthly": 150000,
+                "annual": 1800000
+            },
+            "skills": [
+                "HR Management",
+                "Recruitment",
+                "Payroll",
+                "Employee Relations",
+                "Compliance"
+            ],
+            "address": {
+                "street": "14 Niketan",
+                "city": "Dhaka",
+                "postal_code": "1212",
+                "country": "Bangladesh"
+            },
+            "emergency_contact": {
+                "name": "Samira Ahmed",
+                "relationship": "Spouse",
+                "phone": "+8801800002020"
+            }
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            Int      @id @default(autoincrement())
+  email         String   @unique
+  passwordHash  String   @map("password_hash")
+  name          String
+  isSuperAdmin  Boolean  @default(false) @map("is_super_admin")
+  isActive      Boolean  @default(true) @map("is_active")
+  roleId        Int?     @map("role_id")
+  role          Role?    @relation(fields: [roleId], references: [id])
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
+model Role {
+  id          Int                   @id @default(autoincrement())
+  name        String                @unique
+  description String?
+  isSystem    Boolean               @default(false) @map("is_system")
+  users       User[]
+  permissions RoleModulePermission[]
+  createdAt   DateTime              @default(now()) @map("created_at")
+  updatedAt   DateTime              @updatedAt @map("updated_at")
+
+  @@map("roles")
+}
+
+model Module {
+  id          Int                   @id @default(autoincrement())
+  key         String                @unique
+  name        String
+  route       String
+  description String?
+  permissions RoleModulePermission[]
+  createdAt   DateTime              @default(now()) @map("created_at")
+  updatedAt   DateTime              @updatedAt @map("updated_at")
+
+  @@map("modules")
+}
+
+model RoleModulePermission {
+  id       Int     @id @default(autoincrement())
+  roleId   Int     @map("role_id")
+  moduleId Int     @map("module_id")
+  canView  Boolean @default(false) @map("can_view")
+  canEdit  Boolean @default(false) @map("can_edit")
+  role     Role    @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  module   Module  @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+
+  @@unique([roleId, moduleId])
+  @@map("role_module_permissions")
+}
+
+enum EmploymentType {
+  PERMANENT
+  CONTRACT
+  INTERN
+}
+
+enum EmployeeStatus {
+  ACTIVE
+  RESIGNED
+}
+
+model Employee {
+  id               Int            @id @default(autoincrement())
+  employeeCode     String         @unique @map("employee_code")
+  fullName         String         @map("full_name")
+  email            String?
+  employmentType   EmploymentType @default(PERMANENT) @map("employment_type")
+  joiningDate      DateTime       @map("joining_date") @db.Date
+  probationEndDate DateTime?      @map("probation_end_date") @db.Date
+  pfStartDate      DateTime?      @map("pf_start_date") @db.Date
+  grossSalary      Decimal        @map("gross_salary") @db.Decimal(12, 2)
+  status           EmployeeStatus @default(ACTIVE)
+  lastWorkingDay   DateTime?      @map("last_working_day") @db.Date
+  isDemo           Boolean        @default(false) @map("is_demo")
+  contributions    PfContribution[]
+  createdAt        DateTime       @default(now()) @map("created_at")
+  updatedAt        DateTime       @updatedAt @map("updated_at")
+
+  @@map("employees")
+}
+
+model PfContribution {
+  id          Int      @id @default(autoincrement())
+  employeeId  Int      @map("employee_id")
+  year        Int
+  month       Int
+  basicSalary Decimal  @map("basic_salary") @db.Decimal(12, 2)
+  employeePf  Decimal  @map("employee_pf") @db.Decimal(12, 2)
+  employerPf  Decimal  @map("employer_pf") @db.Decimal(12, 2)
+  daysInMonth Int      @map("days_in_month")
+  daysWorked  Int      @map("days_worked")
+  depositDate DateTime @map("deposit_date") @db.Date
+  isDemo      Boolean  @default(false) @map("is_demo")
+  employee    Employee @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@unique([employeeId, year, month])
+  @@map("pf_contributions")
+}
