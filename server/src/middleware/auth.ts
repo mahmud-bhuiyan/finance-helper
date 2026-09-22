@@ -1,16 +1,17 @@
 import type { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
-import { config } from '../config.js';
-import { prisma } from '../db.js';
+import { config } from '../config/index.js';
+import { prisma } from '../config/db.js';
 
 interface JwtPayload {
   userId: number;
 }
 
-export async function authenticate(req: Request, res: Response, next: NextFunction) {
+export async function authenticate(req: Request, res: Response, next: NextFunction): Promise<void> {
   const header = req.headers.authorization;
   if (!header?.startsWith('Bearer ')) {
-    return res.status(401).json({ error: 'Authentication required' });
+    res.status(401).json({ error: 'Authentication required' });
+    return;
   }
 
   try {
@@ -28,32 +29,39 @@ export async function authenticate(req: Request, res: Response, next: NextFuncti
     });
 
     if (!user || !user.isActive) {
-      return res.status(401).json({ error: 'Invalid or inactive user' });
+      res.status(401).json({ error: 'Invalid or inactive user' });
+      return;
     }
 
     req.user = user;
     next();
   } catch {
-    return res.status(401).json({ error: 'Invalid token' });
+    res.status(401).json({ error: 'Invalid token' });
   }
 }
 
 export function requirePermission(moduleKey: string, action: 'view' | 'edit' = 'view') {
-  return (req: Request, res: Response, next: NextFunction) => {
+  return (req: Request, res: Response, next: NextFunction): void => {
     if (!req.user) {
-      return res.status(401).json({ error: 'Authentication required' });
+      res.status(401).json({ error: 'Authentication required' });
+      return;
     }
 
-    if (req.user.isSuperAdmin) return next();
+    if (req.user.isSuperAdmin) {
+      next();
+      return;
+    }
 
     const permission = req.user.role?.permissions.find((p) => p.module.key === moduleKey);
     if (!permission) {
-      return res.status(403).json({ error: 'Access denied' });
+      res.status(403).json({ error: 'Access denied' });
+      return;
     }
 
     const allowed = action === 'edit' ? permission.canEdit : permission.canView;
     if (!allowed) {
-      return res.status(403).json({ error: 'Insufficient permissions' });
+      res.status(403).json({ error: 'Insufficient permissions' });
+      return;
     }
 
     next();

@@ -1,13 +1,9 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
-import { PrismaClient } from '@prisma/client';
-import dotenv from 'dotenv';
+import { prisma } from '../src/config/db.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
-
-const prisma = new PrismaClient();
 
 const MODULES = [
   { key: 'dashboard', name: 'Dashboard', route: '/', description: 'Overview and quick stats' },

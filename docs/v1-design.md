@@ -3,7 +3,7 @@
 ## Stack
 
 - **P**ostgreSQL, **E**xpress, **R**eact, **N**ode (PERN)
-- React (Vite) + Express API + PostgreSQL + Prisma
+- React (Vite) + TypeScript + Express API + PostgreSQL + Prisma
 
 ## Project layout
 
