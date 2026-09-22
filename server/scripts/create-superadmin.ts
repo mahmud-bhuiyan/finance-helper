@@ -1,13 +1,5 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
 import bcrypt from 'bcryptjs';
-import dotenv from 'dotenv';
-import { PrismaClient } from '@prisma/client';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
-
-const prisma = new PrismaClient();
+import { prisma } from '../src/config/db.js';
 
 async function main() {
   const email = process.env.SUPERADMIN_EMAIL;

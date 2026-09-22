@@ -48,7 +48,7 @@ export default function MonthlyPf() {
           Total deposit: <strong>{totals.combined.toLocaleString()} BDT</strong>
         </p>
       )}
-      {result?.contributions?.length > 0 && (
+      {result && result.contributions && result.contributions.length > 0 && (
         <table style={{ width: '100%', background: '#fff', borderCollapse: 'collapse' }}>
           <thead>
             <tr>

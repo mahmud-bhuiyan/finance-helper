@@ -1,7 +1,5 @@
 import type { PfContribution } from '@prisma/client';
-
-const BASIC_RATIO = 0.6;
-const PF_RATE = 0.07;
+import { BASIC_RATIO, PF_RATE } from '../constants/pf.js';
 
 export type PfContributionInput = Pick<
   PfContribution,

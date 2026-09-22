@@ -1,12 +1,9 @@
 import { Router } from 'express';
-import { prisma } from '../db.js';
+import * as modulesController from '../controllers/modules.controller.js';
 import { authenticate, requirePermission } from '../middleware/auth.js';
 
 const router = Router();
 
-router.get('/', authenticate, requirePermission('roles', 'view'), async (_req, res) => {
-  const modules = await prisma.module.findMany({ orderBy: { id: 'asc' } });
-  res.json(modules);
-});
+router.get('/', authenticate, requirePermission('roles', 'view'), modulesController.list);
 
 export default router;
